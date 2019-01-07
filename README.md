@@ -1,6 +1,4 @@
 # microbiome_analysis
-Tutorials and other resources for a microbiome analysis course
-
 This is a set of files used for Anth 490 Microbiome Analysis taught at Northwestern University in Winter of 2019.
 
 ## Credit
