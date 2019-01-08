@@ -79,12 +79,10 @@ Quest is not only super powerful, it's also used by 100s (maybe 1000s?) of peopl
   
   You should see your folder listed in the directory.
 
-
 2. Do store your scripts and text files in your home directory, /home/<netid>. Feel free to store any you-specific resources here as well, but be aware that there is a 80 GB size limit on this directory. It is backed up, though, which is useful.
 
   As an example, this is what my home directory looks like (ah! a mess!)
   
-
 3. Do not run software or jobs from the head node or login node. This will make others using the HPC unhappy and likely get you an email from Research Computing Services scolding you.
 
    You will either need to start an interactive job, for shorter jobs (these will only continue running while your computer is open).
@@ -97,7 +95,6 @@ Quest is not only super powerful, it's also used by 100s (maybe 1000s?) of peopl
    
    Or run a bash script (stay tuned)
    
-
 4. Request appropriate resources and the appropriate queue for your jobs. If you don't, you risk having your job blocked, canceled for you by Research Computing Services, and/or finish without completing. This bit will make more sense soon, and we will also help you figure out what "appropriate" is.
 
 Liz, you have just said a lot of things I don't understand...
