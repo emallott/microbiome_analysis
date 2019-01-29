@@ -160,7 +160,7 @@ HUMAnN2 creates a functional profile of a microbial community. It determines bot
 
 The HUMAnN2 documentation has a helpful diagram:
 
-![humann2_diamond_500x500.jpg](attachment:humann2_diamond_500x500.jpg)
+![humann2_diamond_500x500.jpg](https://github.com/emallott/microbiome_analysis/blob/master/humann2_diamond_500x500.jpg)
 
 If you happen to have alignment results or a gene table already lying around, you can also start mid-workflow.
 
