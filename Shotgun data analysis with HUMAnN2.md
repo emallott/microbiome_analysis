@@ -45,8 +45,8 @@ Run KneadData on one (small) file and output the results to a folder within your
 -----
 ```
 cd /projects/e30740
-module load java
-kneaddata --input /projects/e30740/humann2_tutorial_seqs/SRR1761726_1.fastq.gz --reference-db /projects/e30740/humann2_ref_data/Homo_sapiens --output /projects/e30740/<yourfolder>/kneaddata_output
+
+singularity exec -B /projects/e30740 -B /projects/e30740/humann2_ref_data -B /projects/e30740/humann2_tutorial_seqs -B /projects/e30740/<yourfolder> /projects/e30740/biobakery_diamondv0822.simg kneaddata --input /projects/e30740/humann2_tutorial_seqs/SRR1761726_1.fastq.gz --reference-db /projects/e30740/humann2_ref_data/Homo_sapiens --output /projects/e30740/<yourfolder>/kneaddata_output
 ```
 -----
 
@@ -101,6 +101,8 @@ nano kneaddata.sh
 
 See where it says "[P1]"? That is a variable. What gets entered in place of that variable is specified in a parameter file (named params.txt in this script). All that parameter file contains is a list of the files you are interested in running this script on.
 
+Note, there is an extra line in this script... the sleep command here is causing the script to wait a random number of seconds before starting. That is because we can't all access the same singularity container at the exact same moment.
+
 While we are looking at the script, lets change <yourfolder> to your personal folder's actual name and the email address to your email.
 
 Ok, close kneaddata.sh by pressing ctrl-X and then y then enter.
@@ -137,7 +139,7 @@ Run the script
 
 -----
 ```
-kneaddata.sh
+./kneaddata.sh
 ```
 -----
 
@@ -198,8 +200,6 @@ nano humann2.sh
 ```
 -----
 
-Note, there is an extra line in this script... the sleep command here is causing the script to wait a random number of seconds before starting. That is because we can't all access the same singularity container at the exact same moment.
-
 Change <yourfolder> to your personal folder's actual name and the email address to your email. Close nano.
 
 Create the parameter file in your home directory.
@@ -232,7 +232,7 @@ Run the script
 
 -----
 ```
-humann2.sh
+./humann2.sh
 ```
 -----
 
