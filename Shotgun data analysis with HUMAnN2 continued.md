@@ -138,9 +138,9 @@ First, we will need to turn our biom table into a QIIME2 feature table.
 
 -----
 ```
-singularity exec -B /projects/e30740 /projects/e30740/qiime2-core2018-8.simg qiime tools import --input-path /projects/e30740/<yourfolder>/humann2/allgenefamilies_ko_cpm_stratified.biom --type 'FeatureTable[RelativeFrequency]' --input-format BIOMV210Format --output-path /projects/e30740/<yourfolder>/humann2/allgenefamilies_ko_cpm_stratified.qza
+singularity exec -B /projects/e30740 /projects/e30740/qiime2-core2018-8.simg qiime tools import --input-path /projects/e30740/<yourfolder>/humann2/allgenefamilies_ko_cpm_stratified.biom --type 'FeatureTable[Frequency]' --input-format BIOMV210Format --output-path /projects/e30740/<yourfolder>/humann2/allgenefamilies_ko_cpm_stratified.qza
 
-singularity exec -B /projects/e30740 /projects/e30740/qiime2-core2018-8.simg qiime tools import --input-path /projects/e30740/<yourfolder>/humann2/allpathabundance_relab_stratified.biom --type 'FeatureTable[RelativeFrequency]' --input-format BIOMV210Format --output-path /projects/e30740/<yourfolder>/humann2/allpathabundance_relab_stratified.qza
+singularity exec -B /projects/e30740 /projects/e30740/qiime2-core2018-8.simg qiime tools import --input-path /projects/e30740/<yourfolder>/humann2/allpathabundance_relab_stratified.biom --type 'FeatureTable[Frequency]' --input-format BIOMV210Format --output-path /projects/e30740/<yourfolder>/humann2/allpathabundance_relab_stratified.qza
 ```
 -----
 
